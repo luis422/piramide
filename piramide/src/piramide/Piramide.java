@@ -1,14 +1,15 @@
 package piramide;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class Piramide {
 
     public static void main(String[] args) {
         
-        int num=0;
         String p = "";
-        num = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite o número de linhas:"));
+	System.out.println("Digite o número de linhas:");
+	Scanner s = new Scanner(System.in);
+        int num = Integer.parseInt(s.nextLine());
         for (int c =0;c<num;c++){
             p=p+"*";
             System.out.println(p);
